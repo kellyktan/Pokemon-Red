@@ -1,0 +1,283 @@
+?- consult('pokemon_red.pl').
+true.
+
+?- start.
+Hello there! Welcome to the world of POKEMON! My name is OAK! People call me the POKEMON PROF! This world is inhabited by creatures called POKEMON! For some people, POKEMON are pets. Others use them for fights. Myself... I study POKEMON as a profession.
+So your name is RED? This is my grandson. He's been your rival since you were a baby. ...Erm, what is his name again? That's right! I remember now! His name is BLUE! RED! Your very own POKEMON legend is about to unfold! A world of dreams and adventures with POKEMON awaits! Let's go!
+
+Enter commands using standard Prolog syntax.
+Available commands are:
+start.             -- to start the game.
+n.  s.  e.  w.     -- to go in that direction.
+take(Object).      -- to pick up an object.
+drop(Object).      -- to put down an object.
+battle_gym.        -- to battle a gym and earn a badge.
+drop(Object).      -- to put down an object.
+look.              -- to look around you again.
+i.                 -- to tell what you are currently holding
+                      and what badges you have.
+instructions.      -- to see this message again.
+halt.              -- to end the game and quit.
+
+You are in Pallet Town. Shades of your journey await!
+Viridian City is to the north and Cinnabar Island is to the south across the water.
+
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- s.
+You cannot surf across the water without the Fuschia City gym badge.
+
+You are in Pallet Town. Shades of your journey await!
+Viridian City is to the north and Cinnabar Island is to the south across the water.
+
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- n.
+You are in Viridian City. The Eternally Green Paradise.
+Pewter City is to the north, Pallet Town is to the south, and Victory Road is to the west.
+
+There is a POKEMON gym here.
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- battle_gym.
+You don't have enough badges to battle this gym.
+true.
+
+?- n.
+You are in Pewter City. A Stone Gray City.
+Cerulean City is to the east and Viridian City is to the south.
+
+There is a POKEMON gym here.
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the pewter_city gym!
+true.
+
+?- e.
+You are in Cerulean City. A Mysterious, Blue Aura Surrounds It.
+Saffron City is to the south and Pewter City is to the east.
+
+There is a POKEMON gym here.
+There is a bicycle here.
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the cerulean_city gym!
+true.
+
+?- take(bicycle).
+OK.
+true.
+
+?- s.
+You are in Saffron City. Shining, Golden Land of Commerce.
+Cerulean City is to the north, Lavender Town is to the east, Vermillion City is to the south, and Celadon City is to the west.
+
+There is a POKEMON gym here.
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- e.
+You are in Lavender Town. The Noble Purple Town.
+Silence Bridge is to the south and Saffron City is to the west.
+
+There is a ancient_box here.
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- take(ancient_box).
+OK.
+true.
+
+?- s.
+There seems to be a large sleeping POKEMON blocking the bridge. Maybe it can be woken with a pokeflute.
+
+You are in Lavender Town. The Noble Purple Town.
+Silence Bridge is to the south and Saffron City is to the west.
+
+
+BLUE: Hey RED!  Let's make this more interesting!  We'll race to see who can become the POKEMON LEAGUE champion first!
+
+true.
+
+?- drop(ancient_box).
+The box broke open to reveal a pokeflute!
+true.
+
+?- take(pokeflute).
+OK.
+true.
+
+?- s.
+You are on Silence Bridge. The sport fishing area.
+Lavender Town is to the north, Fuschia City is to the south, and Vermillion City is to the west.
+
+
+BLUE: I'm so going to beat you to becoming champion!  I have a bunch of badges already!
+
+true.
+
+?- w.
+You are in Vermillion City. The Port of Exquisite Sunsets.
+Saffron City is to the north and Silence Bridge is to the east.
+
+There is a POKEMON gym here.
+
+BLUE: I'm so going to beat you to becoming champion!  I have a bunch of badges already!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the vermillion_city gym!
+true.
+
+?- n.
+You are in Saffron City. Shining, Golden Land of Commerce.
+Cerulean City is to the north, Lavender Town is to the east, Vermillion City is to the south, and Celadon City is to the west.
+
+There is a POKEMON gym here.
+
+BLUE: I'm so going to beat you to becoming champion!  I have a bunch of badges already!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the saffron_city gym!
+true.
+
+?- w.
+You are in Celadon City. The City of Rainbow Dreams.
+Saffron City is to the east and the Cycling Road is to the south.
+
+There is a POKEMON gym here.
+
+BLUE: I'm so going to beat you to becoming champion!  I have a bunch of badges already!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the celadon_city gym!
+true.
+
+?- s.
+You are on the Cycling Road. A favorite hangout for motorcyclists and bicyclists alike.
+Celadon City is to the north and Fuschia City is to the east.
+
+
+BLUE: I'm so going to beat you to becoming champion!  I have a bunch of badges already!
+
+true.
+
+?- e.
+You are in Fuschia City. Behold! It's Passion Pink!
+Silence Bridge is to the north, the Seafoam Islands are to the south across the water, and the Cycling Road is to the west.
+
+There is a POKEMON gym here.
+
+BLUE: You're making this too easy!  I'll definitely become champion before you!
+
+true.
+
+?- s.
+You cannot surf across the water without the Fuschia City gym badge.
+
+You are in Fuschia City. Behold! It's Passion Pink!
+Silence Bridge is to the north, the Seafoam Islands are to the south across the water, and the Cycling Road is to the west.
+
+There is a POKEMON gym here.
+
+BLUE: You're making this too easy!  I'll definitely become champion before you!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the fuschia_city gym!
+true.
+
+?- s.
+You are on the Seafoam Islands. The Twin Islands.
+Fuschia City is to the north across the water and Cinnabar Island is to the west across the water.
+
+
+BLUE: You're making this too easy!  I'll definitely become champion before you!
+
+true.
+
+?- w.
+You are on Cinnabar Island. The Fiery Town of Burning Desire.
+Pallet Town is to the north across the water and the Seafoam Islands are to the east across the water.
+
+There is a POKEMON gym here.
+
+BLUE: You're making this too easy!  I'll definitely become champion before you!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the cinnabar_island gym!
+true.
+
+?- n.
+You are in Pallet Town. Shades of your journey await!
+Viridian City is to the north and Cinnabar Island is to the south across the water.
+
+
+BLUE: You're making this too easy!  I'll definitely become champion before you!
+
+true.
+
+?- n.
+You are in Viridian City. The Eternally Green Paradise.
+Pewter City is to the north, Pallet Town is to the south, and Victory Road is to the west.
+
+There is a POKEMON gym here.
+
+BLUE: You're making this too easy!  I'll definitely become champion before you!
+
+true.
+
+?- battle_gym.
+Congratulations! You beat the viridian_city gym!
+true.
+
+?- w.
+You are on Victory Road. Traveled by all Trainers aiming for the top.
+The Indigo Plateau is to the north and Viridian City is to the east.
+
+
+BLUE: What's taking you so long? I already have 8 gym badges!
+
+true.
+
+?- n.
+You are at the Indigo Plateau! The ultimate goal of Trainers! The highest POKEMON authority!
+Congratulations!  You are the new POKEMON league champion!
+
+The game is over. Please enter the "halt." command.
+
+
+BLUE: Why? Why did I lose? Darn it! You're the new POKEMON LEAGUE champion! Although I don't like to admit it.
+
+true.
+
+?- halt.
